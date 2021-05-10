@@ -2,15 +2,16 @@ version: "3.8"
 services: 
 
     emane-service:
-        image: ubuntu:18.04
-        #build:
-        #    context: ../sender/.
-        #    dockerfile: ../dockerfiles/snmp-sender
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
         networks:
             - the_network
         container_name: emane-service
         tty: true
         stdin_open: true
+        entrypoint: /bin/bash
 
 networks:
     the_network:
