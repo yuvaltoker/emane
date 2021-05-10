@@ -1,0 +1,3 @@
+# What image do we start from
+FROM ubuntu:18.04
+
