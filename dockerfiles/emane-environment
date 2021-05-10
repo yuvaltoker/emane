@@ -26,4 +26,4 @@ RUN dpkg -i .debbuild/python-pynodestatviz*.deb
 RUN cd ..
 RUN git clone https://github.com/adjacentlink/emane-tutorial.git
 RUN cd emane-tutorial
-#RUN make # didnt work
+RUN make # didnt work
