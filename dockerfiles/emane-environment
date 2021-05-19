@@ -21,13 +21,14 @@ RUN apt-get install -y gcc g++ autoconf automake libtool libxml2-dev libprotobuf
 
 RUN git clone https://github.com/adjacentlink/emane.git
 
-RUN apt --fix-broken install -y
+# RUN apt --fix-broken install -y
 
 RUN cd emane && \
     ./autogen.sh && \
     ./configure && \
     make deb
 RUN cd emane/.debbuild && \
-    apt --fix-broken install -y && \
-    dpkg -i *.deb && \
-    apt-get install -f
+    dpkg -i *.deb 2> /dev/null || true # we know this will cuase an error to accure, we're gonna fix it in the next line and we don't want to pause and break the procces
+                                       # so we pass it with '|| true'
+RUN apt --fix-broken install -y
+RUN apt-get install -f
