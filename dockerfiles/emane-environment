@@ -32,3 +32,5 @@ RUN cd emane/.debbuild && \
                                        # so we pass it with '|| true'
 RUN apt --fix-broken install -y
 RUN apt-get install -f
+
+RUN mkdir /0

@@ -1,14 +1,30 @@
 version: "3.8"
 services: 
 
-    emane-service:
+    emane-service-1:
         #image: ubuntu:18.04
         build:
             context: ../
             dockerfile: dockerfiles/emane-environment
         networks:
             - the_network
-        container_name: emane-service
+        container_name: emane-service1
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/0:/0
+        tty: true
+        stdin_open: true
+        entrypoint: /bin/bash
+
+    emane-service-2:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            - the_network
+        container_name: emane-service2
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/0:/0
         tty: true
         stdin_open: true
         entrypoint: /bin/bash
