@@ -3,10 +3,12 @@ FROM ubuntu:20.04
 
 RUN apt-get update
 RUN apt-get install -y build-essential curl apt-utils wget unzip
+RUN apt install -y net-tools iputils-ping
 RUN apt-get install -y nano
 RUN apt-get install -y vim
 
-RUN apt-get install -y python3-pip
+RUN apt update
+RUN apt-get install --fix-broken -y python3-pip
 RUN apt-get install -y python3
 
 RUN apt install -y git
@@ -33,4 +35,4 @@ RUN cd emane/.debbuild && \
 RUN apt --fix-broken install -y
 RUN apt-get install -f
 
-RUN mkdir /0
+RUN mkdir /emane-tutorial
