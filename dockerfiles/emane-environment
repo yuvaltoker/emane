@@ -18,21 +18,19 @@ ENV DEBIAN_FRONTEND noninteractive # preventing dialog error
 
 RUN apt-get install -y gcc g++ autoconf automake libtool libxml2-dev libprotobuf-dev \
     libpcap-dev libpcre3-dev uuid-dev debhelper pkg-config protobuf-compiler git dh-python \
-    python3-protobuf python3-setuptools
+    python3-protobuf python3-setuptools python3-lxml
 
 
 RUN git clone https://github.com/adjacentlink/emane.git
 
-# RUN apt --fix-broken install -y
-
 RUN cd emane && \
     ./autogen.sh && \
     ./configure && \
-    make deb
+    make -j8 deb
+
 RUN cd emane/.debbuild && \
-    dpkg -i *.deb 2> /dev/null || true # we know this will cuase an error to accure, we're gonna fix it in the next line and we don't want to pause and break the procces
-                                       # so we pass it with '|| true'
-RUN apt --fix-broken install -y
+    dpkg -i *.deb
+
 RUN apt-get install -f
 
 RUN mkdir /emane-tutorial
