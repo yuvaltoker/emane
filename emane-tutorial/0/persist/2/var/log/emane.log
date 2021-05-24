@@ -1,0 +1,26 @@
+09:23:15.990782  INFO application: emane -r -d -l 3 -f persist/2/var/log/emane.log platform2.xml 
+09:23:15.991178  INFO application uuid: 081de26e-27a8-40f1-b696-8b463f1d8607
+09:23:15.992646  INFO TRANSPORTI 002 VirtualTransport::configure address: 10.200.0.3
+09:23:15.992732  INFO TRANSPORTI 002 VirtualTransport::configure mask: 255.255.255.0
+09:23:15.992769  INFO TRANSPORTI 002 VirtualTransport::configure arpcacheenable: 1
+09:23:15.992789  INFO TRANSPORTI 002 VirtualTransport::configure arpmodeenable: 1
+09:23:15.992805  INFO TRANSPORTI 002 VirtualTransport::configure bitrate: 0
+09:23:15.992823  INFO TRANSPORTI 002 VirtualTransport::configure broadcastmodeenable: 0
+09:23:15.992840  INFO TRANSPORTI 002 VirtualTransport::configure device: emane0
+09:23:15.992857  INFO TRANSPORTI 002 VirtualTransport::configure devicepath: /dev/net/tun
+09:23:15.992874  INFO TRANSPORTI 002 VirtualTransport::configure flowcontrolenable: 0
+09:23:15.994025  INFO NEMManagerImpl::configure controlportendpoint: 0.0.0.0:47000
+09:23:15.994092  INFO NEMManagerImpl::configure eventservicedevice: eth0
+09:23:15.994123  INFO NEMManagerImpl::configure eventservicegroup: 224.1.2.8:45703
+09:23:15.994139  INFO NEMManagerImpl::configure otamanagerchannelenable: on
+09:23:15.994155  INFO NEMManagerImpl::configure otamanagerdevice: eth0
+09:23:15.994172  INFO NEMManagerImpl::configure otamanagergroup: 224.1.2.8:45702
+09:23:15.994188  INFO NEMManagerImpl::configure eventservicettl: 1
+09:23:15.994206  INFO NEMManagerImpl::configure otamanagerloopback: off
+09:23:15.994231  INFO NEMManagerImpl::configure otamanagermtu: 0
+09:23:15.994265  INFO NEMManagerImpl::configure otamanagerpartcheckthreshold = 2
+09:23:15.994292  INFO NEMManagerImpl::configure otamanagerparttimeoutthreshold = 5
+09:23:15.994310  INFO NEMManagerImpl::configure otamanagerttl: 1
+09:23:15.994328  INFO NEMManagerImpl::configure stats.event.maxeventcountrows: 0
+09:23:15.994348  INFO NEMManagerImpl::configure stats.ota.maxeventcountrows: 0
+09:23:15.994390  INFO NEMManagerImpl::configure stats.ota.maxpacketcountrows: 0
