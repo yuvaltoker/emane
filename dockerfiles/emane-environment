@@ -38,3 +38,5 @@ RUN cd emane/.debbuild && \
 RUN apt-get install -f
 
 RUN mkdir /emane-tutorial
+
+#ENTRYPOINT "/bin/sh /emane-tutorial/1/start-demo.sh"
