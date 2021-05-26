@@ -7,7 +7,7 @@ except:
     from emanesh.events import LocationEvent
 
 # create the event service
-service = EventService(('224.1.2.8',45703,'emanenode0'))
+service = EventService(('224.1.2.8',45703,'eth0'))
 
 # create an event setting 10's position
 event = LocationEvent()
