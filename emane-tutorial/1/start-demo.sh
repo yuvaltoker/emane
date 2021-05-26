@@ -8,7 +8,8 @@ echo "im here"
 emane $demo_path/platform$NODE_NO.xml -r -d -l 3 -f $demo_path/persist/$NODE_NO/var/log/emane.log
 
 # start event daemon
-emaneeventd $demo_path/eventdaemon$NODE_NO.xml -r -d -l 4 -f p$demo_path/ersist/$NODE_NO/var/log/emaneeventd.log
+emaneeventd $demo_path/eventdaemon$NODE_NO.xml -r -d -l 4 -f $demo_path/persist/$NODE_NO/var/log/emaneeventd.log
+#emaneeventd            eventdaemon$NODE_NO.xml -r -d -l 4 -f            persist/$NODE_NO/var/log/emaneeventd.log
 
 sleep 1
 # start gpsd
@@ -21,7 +22,7 @@ if [ -n "$starttime" ]; then
     startoption="start $(date --date "$starttime" "+%H:%M:%S" --utc)GMT"
 fi
 
-mgen input $demo_path/mgen$NODE_NO \
+mgen input $demo_path/mgen \
      output $demo_path/persist/$NODE_NO/var/log/mgen.out  \
      $startoption
      txlog &> $demo_path/persist/$NODE_NO/var/log/mgen.log &

@@ -10,7 +10,7 @@
 
   <nem id="1" definition="rfpipenem.xml">
     <transport definition="transvirtual.xml">
-      <param name="address" value="10.101.0.2"/>/
+      <param name="address" value="10.101.0.2"/>
       <param name="mask" value="255.255.255.0"/>
     </transport>
     </nem>
