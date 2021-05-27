@@ -1,4 +1,6 @@
 # ignoring build
 emane-tutorial/0/persist
+# ignoring build
+emane-tutorial/1/persist
 # ignoring commit's hash
 sourceHash.txt
