@@ -2,5 +2,17 @@
 emane-tutorial/0/persist
 # ignoring build
 emane-tutorial/1/persist
+# ignoring build
+emane-tutorial/2/persist
+# ignoring build
+emane-tutorial/3/persist
+# ignoring build
+emane-tutorial/5/persist
+# ignoring build
+emane-tutorial/6/persist
+# ignoring build
+emane-tutorial/7/persist
+# ignoring build
+emane-tutorial/8/persist
 # ignoring commit's hash
 sourceHash.txt
