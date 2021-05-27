@@ -1,0 +1,1 @@
+for i in $(seq 1 10); do docker exec -it emane-service$i emanesh localhost get table $i nems phy  PathlossEventInfoTable; done

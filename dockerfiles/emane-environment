@@ -13,12 +13,16 @@ RUN apt-get install -y python3
 
 RUN apt install -y git
 
-# Emane requirnments 
+# Emane dependencies 
 ENV DEBIAN_FRONTEND noninteractive # preventing dialog error 
 
 RUN apt-get install -y gcc g++ autoconf automake libtool libxml2-dev libprotobuf-dev \
     libpcap-dev libpcre3-dev uuid-dev debhelper pkg-config protobuf-compiler git dh-python \
     python3-protobuf python3-setuptools python3-lxml
+
+#Emane-Tutorial dependencies
+RUN apt-get install -y bridge-utils mgen fping gpsd gpsd-clients \
+     iperf multitail openssh-server python-tk python-pmw python3-stdeb
 
 
 RUN git clone https://github.com/adjacentlink/emane.git
@@ -34,3 +38,5 @@ RUN cd emane/.debbuild && \
 RUN apt-get install -f
 
 RUN mkdir /emane-tutorial
+
+#ENTRYPOINT "/bin/sh /emane-tutorial/1/start-demo.sh"

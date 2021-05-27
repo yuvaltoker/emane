@@ -2,5 +2,5 @@
 <!DOCTYPE eventagent SYSTEM "file:///usr/share/emane/dtd/eventagent.dtd">
 <eventagent library="gpsdlocationagent">
   <param name="pseudoterminalfile"
-         value="persist/10/var/run/gps.pty"/>
+         value="/emane-tutorial/1//emane-tutorial/1/persist/10/var/run/gps.pty"/>
 </eventagent>
