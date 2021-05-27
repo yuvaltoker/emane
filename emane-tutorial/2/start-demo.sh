@@ -2,6 +2,7 @@ demo_path="/emane-tutorial/2"
 
 mkdir -p $demo_path/persist/$NODE_NO/var/log
 mkdir -p $demo_path/persist/$NODE_NO/var/run
+mkdir -p $demo_path/persist/host/var/log
 
 echo "im here"
 # start emane
