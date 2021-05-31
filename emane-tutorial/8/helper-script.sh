@@ -22,6 +22,6 @@ for i in {1..10..1}
         # changing eth1 to eth0 in platform$i.xml
         sed -i 's/eth1/eth0/g' platform$i.xml
 
-        # changing persist to /emane-tutorial/1/persist in gpsdlocationagent$i.xml
-        sed -i 's/persist/\/emane-tutorial\/1\/persist/g' gpsdlocationagent$i.xml
+        # changing persist to /emane-tutorial/8/persist in gpsdlocationagent$i.xml
+        sed -i 's/persist/\/emane-tutorial\/8\/persist/g' gpsdlocationagent$i.xml
  done

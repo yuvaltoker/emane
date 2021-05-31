@@ -1,4 +1,4 @@
-<otestpoint id="node-2" discovery="node-2:8881" publish="node-2:8882">
+<otestpoint id="10.101.0.3" discovery="10.101.0.3:8881" publish="10.101.0.3:8882">
   <probe configuration="probe-emane-physicallayer.xml">
     <python module="otestpoint.emane.physicallayer" class="PhysicalLayer"/>
   </probe>
