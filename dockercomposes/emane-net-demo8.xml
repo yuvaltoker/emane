@@ -1,0 +1,207 @@
+version: "3.8"
+services: 
+
+    emane-service-1:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.2
+        container_name: emane-service1
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=1
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+    emane-service-2:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.3
+        container_name: emane-service2
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=2
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+    emane-service-3:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.4
+        container_name: emane-service3
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=3
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/bash /emane-tutorial/1/start-demo.sh
+
+    emane-service-4:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.5
+        container_name: emane-service4
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=4
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/bash /emane-tutorial/1/start-demo.sh
+
+    emane-service-5:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.6
+        container_name: emane-service5
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=5
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+
+    emane-service-6:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.7
+        container_name: emane-service6
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=6
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+    emane-service-7:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.8
+        container_name: emane-service7
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=7
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+    emane-service-8:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.9
+        container_name: emane-service8
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=8
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+    emane-service-9:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.10
+        container_name: emane-service9
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=9
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+    emane-service-10:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.11
+        container_name: emane-service10
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        environment:
+            - NODE_NO=10
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/sh /emane-tutorial/1/start-demo.sh
+
+    helper-service:
+        #image: ubuntu:18.04
+        build:
+            context: ../
+            dockerfile: dockerfiles/emane-environment
+        networks:
+            a_ota:
+                ipv4_address: 10.200.0.12
+        container_name: helper-service
+        volumes:
+            - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint: /bin/bash
+
+networks:
+    a_ota:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet: 10.200.0.0/24
