@@ -1,4 +1,4 @@
-DC_YML='dockercomposes/emane-net-demo8.yml'
+DC_YML='/home/user2/work/idf/emane/dockercomposes/emane-net-demo8.yml'
 HELPER_NAME='helper-service'
 
 usage()
@@ -28,10 +28,6 @@ up()
 }
 
 # Loop through arguments and process them
-echo 'Options:'
-    echo '    -d, --down  gets demo down'
-    echo '    -h, --help  Print this usage and exit'
-    echo '    -u, --up    gets demo up'
 for arg in "$@"
 do
     case $arg in

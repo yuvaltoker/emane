@@ -34,7 +34,7 @@ if [ -n "$starttime" ]; then
     startoption="start $(date --date "$starttime" "+%H:%M:%S" --utc)GMT"
 fi
 
-mgen input $demo_path/mgen \
+mgen input $demo_path/my-mgen \
      output $demo_path/persist/$NODE_NO/var/log/mgen.out  \
      $startoption
-     txlog &> $demo_path/persist/$NODE_NO/var/log/mgen.log &
+     txlog &> $demo_path/persist/$NODE_NO/var/log/mgen.log
