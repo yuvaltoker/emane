@@ -1,4 +1,14 @@
+# There are 3 phazes of starting this demo-
+# Phase 1 - making directories, starting emane, event daemons, and gpsd on each node
+# Phase 2 - starting event-service and tdma schedule in helper
+# Phase 3 - start mgen on each node
+# 
+# currentrly check for the option of mixing them together
+
 demo_path="/emane-tutorial/8"
+
+rkdir -f $demo_path/persist/$NODE_NO/var/*
+rkdir -f $demo_path/persist/helper/var/*
 
 mkdir -p $demo_path/persist/$NODE_NO/var/log
 mkdir -p $demo_path/persist/$NODE_NO/var/run
