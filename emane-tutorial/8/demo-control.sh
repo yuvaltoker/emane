@@ -3,20 +3,32 @@ HELPER_NAME='helper-service'
 
 usage()
 {
-    echo 'Usage: ./build-script.h [OPTIONS]'
+    echo 'Usage: ./demo-control.sh [OPTIONS]'
     echo
     echo 'A script for managing demo8'
     echo
     echo 'Options:'
-    echo '    -d, --down  gets demo down'
-    echo '    -h, --help  Print this usage and exit'
-    echo '    -u, --up    gets demo up'
+    echo '    -c, --check  check tables on containers'
+    echo '    -d, --down   gets demo down'
+    echo '    -h, --help   print this usage and exit'
+    echo '    -l, --log    print containers logs'
+    echo '    -u, --up     gets demo up'
     echo
+}
+
+check()
+{
+    ../../check_on_containers.sh
 }
 
 down()
 {
     docker-compose -f $DC_YML down -t 0
+}
+
+log()
+{
+    docker-compose -f $DC_YML logs
 }
 
 up()
@@ -31,12 +43,20 @@ up()
 for arg in "$@"
 do
     case $arg in
+        -c|--check)
+        check
+        exit 1
+        ;;
         -d|--down)
         down
         exit 1
         ;;
         -h|--help)
         usage
+        exit 1
+        ;;
+        -l|--log)
+        log
         exit 1
         ;;
         -u|--up)

@@ -7,8 +7,8 @@
 
 demo_path="/emane-tutorial/8"
 
-rkdir -f $demo_path/persist/$NODE_NO/var/*
-rkdir -f $demo_path/persist/helper/var/*
+rm -r $demo_path/persist/$NODE_NO/var
+rm -r $demo_path/persist/helper/var
 
 mkdir -p $demo_path/persist/$NODE_NO/var/log
 mkdir -p $demo_path/persist/$NODE_NO/var/run
