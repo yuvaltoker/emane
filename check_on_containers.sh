@@ -1,5 +1,5 @@
-container_no="2"
-emanesh_command="set config "$container_no" mac delay=.92"
+container_no=""
+emanesh_command="get table nems mac RxSlotStatusTable"
 
 
 

@@ -8,14 +8,9 @@
 demo_path="/emane-tutorial/8"
 
 rm -r $demo_path/persist/$NODE_NO/var
-rm -r $demo_path/persist/helper/var
-
 mkdir -p $demo_path/persist/$NODE_NO/var/log
 mkdir -p $demo_path/persist/$NODE_NO/var/run
-mkdir -p $demo_path/persist/helper/var/log
-mkdir -p $demo_path/persist/helper/var/run
 
-echo "im here"
 # start emane
 emane $demo_path/platform$NODE_NO.xml -r -d -l 3 -f $demo_path/persist/$NODE_NO/var/log/emane.log
 
