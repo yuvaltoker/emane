@@ -11,3 +11,8 @@ emaneeventservice -d eventservice.xml -l 3 -f persist/helper/var/log/emaneevents
                                     --uuidfile persist/helper/var/run/emaneeventservice.uuid
 emaneevent-tdmaschedule schedule.xml -i eth0
 
+# start opentestpoint broker
+otestpoint-broker $demo_path/otestpoint-broker.xml -d -l 3 \
+                  -f $demo_path/persist/helper/var/log/otestpoint-broker.log \
+                  --pidfile $demo_path/persist/helper/var/run/otestpoint-broker.pid \
+                  --uuidfile $demo_path/persist/helper/var/run/otestpoint-broker.uuid

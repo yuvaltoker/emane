@@ -1,4 +1,4 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<otestpoint-recorder file="persist/1/var/log/otestpoint-recorder.data">
+<otestpoint-recorder file="/emane-tutorial/8/persist/1/var/log/otestpoint-recorder.data">
   <testpoint publish="10.101.0.2:8882"/>
 </otestpoint-recorder>
