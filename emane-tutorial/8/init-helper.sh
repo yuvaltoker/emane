@@ -1,4 +1,6 @@
-cd /emane-tutorial/8
+
+demo_path="/emane-tutorial/8"
+cd $demo_path
 
 rm -r $demo_path/persist/helper/var
 mkdir -p $demo_path/persist/helper/var/log

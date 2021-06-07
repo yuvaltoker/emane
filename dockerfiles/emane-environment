@@ -20,10 +20,9 @@ RUN apt-get install -y gcc g++ autoconf automake libtool libxml2-dev libprotobuf
     libpcap-dev libpcre3-dev uuid-dev debhelper pkg-config protobuf-compiler git dh-python \
     python3-protobuf python3-setuptools python3-lxml
 
-#Emane-Tutorial dependencies
+# Emane-Tutorial dependencies & installation
 RUN apt-get install -y bridge-utils mgen fping gpsd gpsd-clients \
-     iperf multitail openssh-server python-tk python-pmw python3-stdeb
-
+    iperf multitail openssh-server python-tk python-pmw python3-stdeb
 
 RUN git clone https://github.com/adjacentlink/emane.git
 
@@ -36,6 +35,21 @@ RUN cd emane/.debbuild && \
     dpkg -i *.deb
 
 RUN apt-get install -f
+
+# Opentestpoint additional dependencies & installation
+
+RUN apt-get install  python3-zmq python3-dev \
+    libzmq5 libzmq3-dev sqlite3 libsqlite3-dev
+
+RUN git clone https://github.com/adjacentlink/opentestpoint.git
+
+RUN cd opentestpoint && \
+    ./autogen.sh && \
+    ./configure && \
+    make -j8 deb
+
+RUN cd opentestpoint/.debbuild && \
+    dpkg -i *.deb
 
 RUN mkdir /emane-tutorial
 
