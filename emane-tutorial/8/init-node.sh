@@ -17,7 +17,10 @@ sleep 1
 gpsd -P $demo_path/persist/$NODE_NO/var/run/gpsd.pid -G -n -b $(cat $demo_path/persist/$NODE_NO/var/run/gps.pty)
 
 # start opentestpointd
-otestpointd -d $demo_path/otestpointd$NODE_NO.xml
+# otestpointd -d $demo_path/otestpointd$NODE_NO.xml
+otestpointd $demo_path/otestpointd$NODE_NO.xml -d -l 4 -f $demo_path/persist/$NODE_NO/var/log/otestpointd.log \
+                    --pidfile $demo_path/persist/$NODE_NO/var/run/otestpointd.pid \
+                    --uuidfile $demo_path/persist/$NODE_NO/var/run/otestpointd.uuid
 
 # start opentestpoint recorder
 otestpoint-recorder $demo_path/otestpoint-recorder$NODE_NO.xml -d -l 4 -f $demo_path/persist/$NODE_NO/var/log/otestpoint-recorder.log \

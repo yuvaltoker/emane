@@ -51,6 +51,23 @@ RUN cd opentestpoint && \
 RUN cd opentestpoint/.debbuild && \
     dpkg -i *.deb
 
+RUN apt-get install -f
+
+# Opentestpoint-probe-emane
+
+RUN git clone https://github.com/adjacentlink/opentestpoint-probe-emane.git
+
+RUN cd opentestpoint-probe-emane && \
+    ./autogen.sh && \
+    ./configure && \
+    make && \
+    make deb
+
+RUN cd opentestpoint-probe-emane/.debbuild && \
+    dpkg -i *.deb
+
+RUN apt-get install -f
+
 RUN mkdir /emane-tutorial
 
 #ENTRYPOINT "/bin/sh /emane-tutorial/1/start-demo.sh"

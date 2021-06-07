@@ -34,7 +34,7 @@ log()
 up()
 {
     # get demo up + init each node via entrypoint
-    docker-compose -f $DC_YML up -d
+    docker-compose -f $DC_YML up -d --build
     # init helper
     docker exec -it $HELPER_NAME /bin/sh /emane-tutorial/8/init-helper.sh
 }
