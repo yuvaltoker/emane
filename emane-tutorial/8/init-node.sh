@@ -22,6 +22,20 @@ sleep 1
 # start gpsd
 gpsd -P $demo_path/persist/$NODE_NO/var/run/gpsd.pid -G -n -b $(cat $demo_path/persist/$NODE_NO/var/run/gps.pty)
 
+# start opentestpointd
+otestpointd -d $demo_path/otestpointd$NODE_NO.xml
+
+# start opentestpoint recorder
+otestpoint-recorder $demo_path/otestpoint-recorder$NODE_NO.xml -d -l 3 -f $demo_path/persist/$NODE_NO/var/log/otestpoint-recorder.log \
+                    --pidfile $demo_path/persist/$NODE_NO/var/run/otestpoint-recorder.pid \
+                    --uuidfile $demo_path/persist/$NODE_NO/var/run/otestpoint-recorder.uuid
+
+# start opentestpoint broker
+otestpoint-broker $demo_path/otestpoint-broker.xml -d -l 3 \
+                  -f $demo_path/persist/$NODE_NO/var/log/otestpoint-broker.log \
+                  --pidfile $demo_path/persist/$NODE_NO/var/run/otestpoint-broker.pid \
+                  --uuidfile $demo_path/persist/$NODE_NO/var/run/otestpoint-broker.uuid
+
 #start mgen
 starttime=
 startoption=""
