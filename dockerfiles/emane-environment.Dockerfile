@@ -39,7 +39,8 @@ RUN apt-get install -f
 # Opentestpoint additional dependencies & installation
 
 RUN apt-get install -y python3-zmq python3-dev \
-    libzmq5 libzmq3-dev sqlite3 libsqlite3-dev
+    libzmq5 libzmq3-dev sqlite3 libsqlite3-dev \
+    python3-psutil python3-pyroute2
 
 RUN git clone https://github.com/adjacentlink/opentestpoint.git
 
