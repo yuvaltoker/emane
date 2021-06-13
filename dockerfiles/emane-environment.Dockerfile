@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND noninteractive # preventing dialog error
 
 RUN apt-get update
-RUN apt-get install -y build-essential curl apt-utils wget unzip
+RUN apt-get install -y build-essential curl apt-utils wget unzip tcpdump
 RUN apt install -y net-tools iputils-ping
 RUN apt-get install -y nano
 RUN apt-get install -y vim

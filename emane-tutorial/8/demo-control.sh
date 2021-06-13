@@ -14,6 +14,7 @@ usage()
     echo 'A script for managing demo8'
     echo
     echo 'Options:'
+    echo '    -b, --build  docker compose up will be called with build flag'
     echo '    -c, --check  check tables on containers'
     echo '    -d, --down   gets demo down'
     echo '    -h, --help   print this usage and exit'
@@ -49,6 +50,9 @@ up()
 for arg in "$@"
 do
     case $arg in
+        -b|--build)
+        is_build='T'
+        ;;
         -c|--check)
         is_check='T'
         ;;

@@ -182,6 +182,16 @@ services:
         privileged: true
         entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
 
+    tcpdump_cont:
+        build:
+            context: ../
+            dockerfile: dockerfiles/test-dump.Dockerfile
+        container_name: tcpdump_cont
+        tty: true
+        stdin_open: true
+        privileged: true
+        entrypoint:  /bin/bash
+
     helper-service:
         #image: ubuntu:18.04
         build:
