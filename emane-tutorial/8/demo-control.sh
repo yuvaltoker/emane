@@ -95,3 +95,8 @@ if [ "$is_check" = "T" ]; then
     exit 1
 fi
 
+if [ "$is_log" = "T" ]; then
+    log
+    exit 1
+fi
+

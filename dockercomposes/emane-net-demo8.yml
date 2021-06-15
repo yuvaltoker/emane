@@ -177,10 +177,12 @@ services:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
         environment:
             - NODE_NO=10
+            - demo_path=/emane-tutorial/8
         tty: true
         stdin_open: true
-        privileged: true
+        privileged: true # error without privileged: "ABORT unable to set realtime scheduler" when running emane
         entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        #entrypoint:  /bin/sh
 
     tcpdump_cont:
         build:

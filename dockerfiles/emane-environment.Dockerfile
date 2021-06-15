@@ -8,6 +8,9 @@ RUN apt install -y net-tools iputils-ping
 RUN apt-get install -y nano
 RUN apt-get install -y vim
 
+# the next lines will take care of tcpdump when --privileged is accure
+RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump && bash
+
 RUN apt update
 RUN apt-get install --fix-broken -y python3-pip
 RUN apt-get install -y python3
