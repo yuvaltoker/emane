@@ -1,0 +1,218 @@
+<probes>
+  <statistics>
+    <probe name="Counters.General">
+      <entry name="avgProcessAPIQueueDepth" type="double"/>
+      <entry name="avgProcessAPIQueueWait" type="double"/>
+      <entry name="avgTimedEventLatency" type="double"/>
+      <entry name="avgTimedEventLatencyRatio" type="double"/>
+      <entry name="numBroadcastBytesUnsupported" type="uint32"/>
+      <entry name="numBroadcastPacketsUnsupported" type="uint32"/>
+      <entry name="numDownstreamBroadcastDataDiscardDueToTxop" type="uint32"/>
+      <entry name="numDownstreamUnicastDataDiscardDueToRetries" type="uint32"/>
+      <entry name="numDownstreamUnicastDataDiscardDueToTxop" type="uint32"/>
+      <entry name="numDownstreamUnicastRtsCtsDataDiscardDueToRetries" type="uint32"/>
+      <entry name="numOneHopNbrHighWaterMark" type="uint32"/>
+      <entry name="numRxOneHopNbrListEvents" type="uint32"/>
+      <entry name="numRxOneHopNbrListInvalidEvents" type="uint32"/>
+      <entry name="numTwoHopNbrHighWaterMark" type="uint32"/>
+      <entry name="numTxOneHopNbrListEvents" type="uint32"/>
+      <entry name="numUnicastBytesUnsupported" type="uint32"/>
+      <entry name="numUnicastPacketsUnsupported" type="uint32"/>
+      <entry name="numUpstreamBroadcastDataDiscardDueToClobberRxDuringTx" type="uint32"/>
+      <entry name="numUpstreamBroadcastDataDiscardDueToClobberRxHiddenBusy" type="uint32"/>
+      <entry name="numUpstreamBroadcastDataDiscardDueToSinr" type="uint32"/>
+      <entry name="numUpstreamBroadcastDataNoiseHiddenRx" type="uint32"/>
+      <entry name="numUpstreamBroadcastDataNoiseRxCommon" type="uint32"/>
+      <entry name="numUpstreamUnicastDataDiscardDueToClobberRxDuringTx" type="uint32"/>
+      <entry name="numUpstreamUnicastDataDiscardDueToClobberRxHiddenBusy" type="uint32"/>
+      <entry name="numUpstreamUnicastDataDiscardDueToSinr" type="uint32"/>
+      <entry name="numUpstreamUnicastDataNoiseHiddenRx" type="uint32"/>
+      <entry name="numUpstreamUnicastDataNoiseRxCommon" type="uint32"/>
+      <entry name="numUpstreamUnicastRtsCtsDataRxFromPhy" type="uint32"/>
+      <entry name="numUpstreamUnicastRtsCtsRxFromPhy" type="uint32"/>
+      <entry name="processedConfiguration" type="uint64"/>
+      <entry name="processedDownstreamControl" type="uint64"/>
+      <entry name="processedDownstreamPackets" type="uint64"/>
+      <entry name="processedEvents" type="uint64"/>
+      <entry name="processedTimedEvents" type="uint64"/>
+      <entry name="processedUpstreamControl" type="uint64"/>
+      <entry name="processedUpstreamPackets" type="uint64"/>
+    </probe>
+
+    <probe name="Counters.Queue0">
+      <entry name="avgDownstreamProcessingDelay0" type="float"/>
+      <entry name="avgUpstreamProcessingDelay0" type="float"/>
+      <entry name="numBroadcastBytesTooLarge0" type="uint32"/>
+      <entry name="numBroadcastPacketsTooLarge0" type="uint32"/>
+      <entry name="numDownstreamBytesBroadcastGenerated0" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastRx0" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastTx0" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastGenerated0" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastRx0" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastTx0" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastDrop0" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastGenerated0" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastRx0" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastTx0" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastDrop0" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastGenerated0" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastRx0" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastTx0" type="uint64"/>
+      <entry name="numHighWaterMark0" type="uint32"/>
+      <entry name="numHighWaterMax0" type="uint32"/>
+      <entry name="numUnicastBytesTooLarge0" type="uint32"/>
+      <entry name="numUnicastPacketsTooLarge0" type="uint32"/>
+      <entry name="numUpstreamBytesBroadcastRx0" type="uint64"/>
+      <entry name="numUpstreamBytesBroadcastTx0" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastRx0" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastTx0" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastDrop0" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastRx0" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastTx0" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastDrop0" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastRx0" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastTx0" type="uint64"/>
+    </probe>
+
+    <probe name="Counters.Queue1">
+      <entry name="avgDownstreamProcessingDelay1" type="float"/>
+      <entry name="avgUpstreamProcessingDelay1" type="float"/>
+      <entry name="numBroadcastBytesTooLarge1" type="uint32"/>
+      <entry name="numBroadcastPacketsTooLarge1" type="uint32"/>
+      <entry name="numDownstreamBytesBroadcastGenerated1" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastRx1" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastTx1" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastGenerated1" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastRx1" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastTx1" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastDrop1" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastGenerated1" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastRx1" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastTx1" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastDrop1" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastGenerated1" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastRx1" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastTx1" type="uint64"/>
+      <entry name="numHighWaterMark1" type="uint32"/>
+      <entry name="numHighWaterMax1" type="uint32"/>
+      <entry name="numUnicastBytesTooLarge1" type="uint32"/>
+      <entry name="numUnicastPacketsTooLarge1" type="uint32"/>
+      <entry name="numUpstreamBytesBroadcastRx1" type="uint64"/>
+      <entry name="numUpstreamBytesBroadcastTx1" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastRx1" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastTx1" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastDrop1" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastRx1" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastTx1" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastDrop1" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastRx1" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastTx1" type="uint64"/>
+    </probe>
+
+    <probe name="Counters.Queue2">
+      <entry name="avgDownstreamProcessingDelay2" type="float"/>
+      <entry name="avgUpstreamProcessingDelay2" type="float"/>
+      <entry name="numBroadcastBytesTooLarge2" type="uint32"/>
+      <entry name="numBroadcastPacketsTooLarge2" type="uint32"/>
+      <entry name="numDownstreamBytesBroadcastGenerated2" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastRx2" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastTx2" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastGenerated2" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastRx2" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastTx2" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastDrop2" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastGenerated2" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastRx2" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastTx2" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastDrop2" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastGenerated2" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastRx2" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastTx2" type="uint64"/>
+      <entry name="numHighWaterMark2" type="uint32"/>
+      <entry name="numHighWaterMax2" type="uint32"/>
+      <entry name="numUnicastBytesTooLarge2" type="uint32"/>
+      <entry name="numUnicastPacketsTooLarge2" type="uint32"/>
+      <entry name="numUpstreamBytesBroadcastRx2" type="uint64"/>
+      <entry name="numUpstreamBytesBroadcastTx2" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastRx2" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastTx2" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastDrop2" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastRx2" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastTx2" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastDrop2" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastRx2" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastTx2" type="uint64"/>
+    </probe>
+
+    <probe name="Counters.Queue3">
+      <entry name="avgDownstreamProcessingDelay3" type="float"/>
+      <entry name="avgUpstreamProcessingDelay3" type="float"/>
+      <entry name="numBroadcastBytesTooLarge3" type="uint32"/>
+      <entry name="numBroadcastPacketsTooLarge3" type="uint32"/>
+      <entry name="numDownstreamBytesBroadcastGenerated3" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastRx3" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastTx3" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastGenerated3" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastRx3" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastTx3" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastDrop3" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastGenerated3" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastRx3" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastTx3" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastDrop3" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastGenerated3" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastRx3" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastTx3" type="uint64"/>
+      <entry name="numHighWaterMark3" type="uint32"/>
+      <entry name="numHighWaterMax3" type="uint32"/>
+      <entry name="numUnicastBytesTooLarge3" type="uint32"/>
+      <entry name="numUnicastPacketsTooLarge3" type="uint32"/>
+      <entry name="numUpstreamBytesBroadcastRx3" type="uint64"/>
+      <entry name="numUpstreamBytesBroadcastTx3" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastRx3" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastTx3" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastDrop3" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastRx3" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastTx3" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastDrop3" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastRx3" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastTx3" type="uint64"/>
+    </probe>
+  </statistics>
+
+  <tables>
+    <probe name="Tables.Status.Queue0">
+      <entry name="BroadcastPacketAcceptTable0" type="MeasurementTable"/>
+      <entry name="BroadcastPacketDropTable0" type="MeasurementTable"/>
+      <entry name="UnicastPacketAcceptTable0" type="MeasurementTable"/>
+      <entry name="UnicastPacketDropTable0" type="MeasurementTable"/>
+    </probe>
+    <probe name="Tables.Status.Queue1">
+      <entry name="BroadcastPacketAcceptTable1" type="MeasurementTable"/>
+      <entry name="BroadcastPacketDropTable1" type="MeasurementTable"/>
+      <entry name="UnicastPacketAcceptTable1" type="MeasurementTable"/>
+      <entry name="UnicastPacketDropTable1" type="MeasurementTable"/>
+    </probe>
+    <probe name="Tables.Status.Queue2">
+      <entry name="BroadcastPacketAcceptTable2" type="MeasurementTable"/>
+      <entry name="BroadcastPacketDropTable2" type="MeasurementTable"/>
+      <entry name="UnicastPacketAcceptTable2" type="MeasurementTable"/>
+      <entry name="UnicastPacketDropTable2" type="MeasurementTable"/>
+    </probe>
+    <probe name="Tables.Status.Queue3">
+      <entry name="BroadcastPacketAcceptTable3" type="MeasurementTable"/>
+      <entry name="BroadcastPacketDropTable3" type="MeasurementTable"/>
+      <entry name="UnicastPacketAcceptTable3" type="MeasurementTable"/>
+      <entry name="UnicastPacketDropTable3" type="MeasurementTable"/>
+    </probe>
+    <probe name="Tables.Events">
+      <entry name="EventReceptionTable" type="MeasurementTable"/>
+    </probe>
+    <probe name="Tables.Neighbor">
+      <entry name="NeighborMetricTable" type="MeasurementTable"/>
+      <entry name="NeighborStatusTable" type="MeasurementTable"/>
+      <entry name="OneHopNeighborTable" type="MeasurementTable"/>
+      <entry name="TwoHopNeighborTable" type="MeasurementTable"/>
+    </probe>
+  </tables>
+</probes>
