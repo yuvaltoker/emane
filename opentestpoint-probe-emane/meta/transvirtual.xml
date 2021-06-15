@@ -1,0 +1,54 @@
+<probes>
+  <statistics>
+    <probe name="Counters.General">
+      <entry name="avgDownstreamProcessingDelay" type="float"/>
+      <entry name="avgProcessAPIQueueDepth" type="double"/>
+      <entry name="avgProcessAPIQueueWait" type="double"/>
+      <entry name="avgTimedEventLatency" type="double"/>
+      <entry name="avgTimedEventLatencyRatio" type="double"/>
+      <entry name="avgUpstreamProcessingDelay" type="float"/>
+      <entry name="numDownstreamBytesBroadcastGenerated" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastRx" type="uint64"/>
+      <entry name="numDownstreamBytesBroadcastTx" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastGenerated" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastRx" type="uint64"/>
+      <entry name="numDownstreamBytesUnicastTx" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastDrop" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastGenerated" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastRx" type="uint64"/>
+      <entry name="numDownstreamPacketsBroadcastTx" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastDrop" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastGenerated" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastRx" type="uint64"/>
+      <entry name="numDownstreamPacketsUnicastTx" type="uint64"/>
+      <entry name="numUpstreamBytesBroadcastRx" type="uint64"/>
+      <entry name="numUpstreamBytesBroadcastTx" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastRx" type="uint64"/>
+      <entry name="numUpstreamBytesUnicastTx" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastDrop" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastRx" type="uint64"/>
+      <entry name="numUpstreamPacketsBroadcastTx" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastDrop" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastRx" type="uint64"/>
+      <entry name="numUpstreamPacketsUnicastTx" type="uint64"/>
+      <entry name="processedConfiguration" type="uint64"/>
+      <entry name="processedDownstreamControl" type="uint64"/>
+      <entry name="processedDownstreamPackets" type="uint64"/>
+      <entry name="processedEvents" type="uint64"/>
+      <entry name="processedTimedEvents" type="uint64"/>
+      <entry name="processedUpstreamControl" type="uint64"/>
+      <entry name="processedUpstreamPackets" type="uint64"/>
+    </probe>
+  </statistics>
+  <tables>
+    <probe name="Tables.Status">
+      <entry name="BroadcastPacketAcceptTable" type="MeasurementTable"/>
+      <entry name="BroadcastPacketDropTable" type="MeasurementTable"/>
+      <entry name="UnicastPacketAcceptTable" type="MeasurementTable"/>
+      <entry name="UnicastPacketDropTable" type="MeasurementTable"/>
+    </probe>
+    <probe name="Tables.Events">
+      <entry name="EventReceptionTable" type="MeasurementTable"/>
+    </probe>
+  </tables>
+</probes>
