@@ -1,4 +1,4 @@
-DC_YML='/home/user2/work/idf/emane/dockercomposes/emane-net-demo8.yml'
+DC_YML='/home/user2/work/idf/emane/dockercomposes/emane-net-probe-testing.yml'
 HELPER_NAME='helper-service'
 BUILD=''
 is_check='F'
@@ -43,7 +43,7 @@ up()
     # get demo up + init each node via entrypoint
     docker-compose -f $DC_YML up -d $BUILD
     # init helper
-    docker exec -it $HELPER_NAME /bin/sh /emane-tutorial/8/init-helper.sh
+    #docker exec -it $HELPER_NAME /bin/sh /emane-tutorial/8/init-helper.sh
 }
 
 # Loop through arguments and sign them

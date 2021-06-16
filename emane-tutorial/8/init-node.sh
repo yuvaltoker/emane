@@ -2,13 +2,6 @@
 demo_path="/emane-tutorial/8"
 
 if [ "$is_probe_testing" = "true" ]; then
-    cd /opentestpoint && \
-    ./autogen.sh && \
-    ./configure && \
-    make -j8 deb
-
-    cd .debbuild && \
-    dpkg -i *.deb
 
     cd /opentestpoint-probe-emane && \
     ./autogen.sh && \
@@ -16,7 +9,7 @@ if [ "$is_probe_testing" = "true" ]; then
     make && \
     make deb
 
-    cd .debbuild && \
+    cd /opentestpoint-probe-emane/.debbuild && \
     dpkg -i *.deb
 
     cd /
