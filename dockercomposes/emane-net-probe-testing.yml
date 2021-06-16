@@ -13,6 +13,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=1
             - demo_path=/emane-tutorial/8
@@ -34,6 +35,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=2
             - demo_path=/emane-tutorial/8
@@ -55,6 +57,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=3
             - demo_path=/emane-tutorial/8
@@ -76,6 +79,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=4
             - demo_path=/emane-tutorial/8
@@ -97,6 +101,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=5
             - demo_path=/emane-tutorial/8
@@ -119,6 +124,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=6
             - demo_path=/emane-tutorial/8
@@ -140,6 +146,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=7
             - demo_path=/emane-tutorial/8
@@ -161,6 +168,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=8
             - demo_path=/emane-tutorial/8
@@ -182,6 +190,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=9
             - demo_path=/emane-tutorial/8
@@ -203,6 +212,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         environment:
             - NODE_NO=10
             - demo_path=/emane-tutorial/8
@@ -235,6 +245,7 @@ services:
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            - /home/user2/work/idf/emane/opentestpoint/:/opentestpoint
         tty: true
         stdin_open: true
         privileged: true

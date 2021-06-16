@@ -45,15 +45,17 @@ RUN apt-get install -y python3-zmq python3-dev \
     libzmq5 libzmq3-dev sqlite3 libsqlite3-dev \
     python3-psutil python3-pyroute2
 
-RUN git clone https://github.com/adjacentlink/opentestpoint.git
+#RUN git clone https://github.com/adjacentlink/opentestpoint.git
 
-RUN cd opentestpoint && \
-    ./autogen.sh && \
-    ./configure && \
-    make -j8 deb
+RUN mkdir opentestpoint
 
-RUN cd opentestpoint/.debbuild && \
-    dpkg -i *.deb
+#RUN cd opentestpoint && \
+#    ./autogen.sh && \
+#    ./configure && \
+#    make -j8 deb
+
+#RUN cd opentestpoint/.debbuild && \
+#    dpkg -i *.deb
 
 RUN apt-get install -f
 
