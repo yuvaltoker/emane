@@ -15,10 +15,12 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=1
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
 
     emane-service-2:
         #image: ubuntu:18.04
@@ -34,10 +36,12 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=2
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
 
     emane-service-3:
         #image: ubuntu:18.04
@@ -53,6 +57,8 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=3
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
@@ -72,6 +78,8 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=4
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
@@ -91,10 +99,12 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=5
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
 
 
     emane-service-6:
@@ -111,10 +121,12 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=6
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
 
     emane-service-7:
         #image: ubuntu:18.04
@@ -130,10 +142,12 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=7
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
 
     emane-service-8:
         #image: ubuntu:18.04
@@ -149,10 +163,12 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=8
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
 
     emane-service-9:
         #image: ubuntu:18.04
@@ -168,10 +184,12 @@ services:
             - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=9
+            - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
 
     emane-service-10:
         #image: ubuntu:18.04
@@ -188,10 +206,11 @@ services:
         environment:
             - NODE_NO=10
             - demo_path=/emane-tutorial/8
+            - is_probe_testing=true
         tty: true
         stdin_open: true
         privileged: true # error without privileged: "ABORT unable to set realtime scheduler" when running emane
-        entrypoint:  /bin/sh /emane-tutorial/8/init-node.sh
+        entrypoint: /bin/sh
         #entrypoint:  /bin/sh
 
     tcpdump_cont:

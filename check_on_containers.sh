@@ -1,5 +1,5 @@
 container_no=""
-emanesh_command="get table nems mac RxSlotStatusTable"
+emanesh_command="get table nems mac"
 
 
 
