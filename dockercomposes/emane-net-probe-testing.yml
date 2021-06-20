@@ -12,7 +12,7 @@ services:
         container_name: emane-service1
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=1
             - demo_path=/emane-tutorial/8
@@ -33,7 +33,7 @@ services:
         container_name: emane-service2
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=2
             - demo_path=/emane-tutorial/8
@@ -54,7 +54,7 @@ services:
         container_name: emane-service3
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=3
             - demo_path=/emane-tutorial/8
@@ -75,7 +75,7 @@ services:
         container_name: emane-service4
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=4
             - demo_path=/emane-tutorial/8
@@ -96,7 +96,7 @@ services:
         container_name: emane-service5
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=5
             - demo_path=/emane-tutorial/8
@@ -118,7 +118,7 @@ services:
         container_name: emane-service6
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=6
             - demo_path=/emane-tutorial/8
@@ -139,7 +139,7 @@ services:
         container_name: emane-service7
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=7
             - demo_path=/emane-tutorial/8
@@ -160,7 +160,7 @@ services:
         container_name: emane-service8
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=8
             - demo_path=/emane-tutorial/8
@@ -181,7 +181,7 @@ services:
         container_name: emane-service9
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=9
             - demo_path=/emane-tutorial/8
@@ -202,7 +202,7 @@ services:
         container_name: emane-service10
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         environment:
             - NODE_NO=10
             - demo_path=/emane-tutorial/8
@@ -234,7 +234,7 @@ services:
         container_name: helper-service
         volumes:
             - /home/user2/work/idf/emane/emane-tutorial/:/emane-tutorial
-            - /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
+            #- /home/user2/work/idf/emane/opentestpoint-probe-emane/:/opentestpoint-probe-emane
         tty: true
         stdin_open: true
         privileged: true

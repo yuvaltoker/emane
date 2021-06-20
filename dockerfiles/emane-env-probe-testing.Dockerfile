@@ -62,6 +62,7 @@ RUN apt-get install -f
 #RUN git clone https://github.com/adjacentlink/opentestpoint-probe-emane.git
 
 RUN mkdir opentestpoint-probe-emane
+ADD ./opentestpoint-probe-emane-original/ /opentestpoint-probe-emane
 
 # next lines should be in script when entering the container
 #RUN cd opentestpoint-probe-emane && \
