@@ -1,0 +1,22 @@
+<probes>
+  <statistics>
+    <probe name="Counters.General">
+      <entry name="avgProcessAPIQueueDepth" type="double"/>
+      <entry name="avgProcessAPIQueueWait" type="double"/>
+      <entry name="avgTimedEventLatency" type="double"/>
+      <entry name="avgTimedEventLatencyRatio" type="double"/>
+      <entry name="processedConfiguration" type="uint64"/>
+      <entry name="processedDownstreamControl" type="uint64"/>
+      <entry name="processedDownstreamPackets" type="uint64"/>
+      <entry name="processedEvents" type="uint64"/>
+      <entry name="processedTimedEvents" type="uint64"/>
+      <entry name="processedUpstreamControl" type="uint64"/>
+      <entry name="processedUpstreamPackets" type="uint64"/>
+    </probe>
+  </statistics>
+  <tables>
+    <probe name="Tables.Events">
+      <entry name="EventReceptionTable" type="MeasurementTable"/>
+    </probe>
+  </tables>
+</probes>
