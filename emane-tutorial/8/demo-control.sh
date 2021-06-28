@@ -1,4 +1,4 @@
-DC_YML='/home/user2/work/idf/emane/dockercomposes/emane-net-demo8.yml'
+DC_YML='/home/user2/work/idf/emane/dockercomposes/emane-net-probe-test.yml'
 HELPER_NAME='helper-service'
 BUILD=''
 is_check='F'
