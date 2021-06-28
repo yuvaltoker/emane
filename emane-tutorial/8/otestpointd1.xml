@@ -9,4 +9,8 @@
    <probe configuration="/emane-tutorial/8/probe-emane-virtualtransport.xml">
      <python module="otestpoint.emane.virtualtransport" class="VirtualTransport"/>
    </probe>
+   <probe configuration="/emane-tutorial/8/probe-example.xml">
+    <python module="otestpoint.example.probeexample" class="ProbeExample"/>
+  </probe>
 </otestpoint>
+
