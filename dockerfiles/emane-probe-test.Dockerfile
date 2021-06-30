@@ -73,6 +73,16 @@ RUN cd opentestpoint-probe-emane/.debbuild && \
 RUN mkdir opentestpoint-probe-example
 ADD opentestpoint-probe-example/ /opentestpoint-probe-example
 
+RUN chmod 777 -R opentestpoint-probe-example && \
+    cd opentestpoint-probe-example && \
+    ./autogen.sh && \
+    ./configure && \
+    make && \
+    make deb
+
+RUN cd opentestpoint-probe-example/.debbuild && \
+    dpkg-deb -xv *.deb /usr/lib/python3/dist-packages/otestpoint/
+
 RUN apt-get install -f
 
 RUN mkdir /emane-tutorial
