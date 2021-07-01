@@ -1,0 +1,5 @@
+<probe-iproute address='localhost'>
+  <probes>
+    <otestpoint.iproute.routing enable="yes"/>
+  </probes>
+</probe-iproute>

@@ -70,6 +70,9 @@ RUN cd opentestpoint-probe-emane && \
 RUN cd opentestpoint-probe-emane/.debbuild && \
     dpkg -i *.deb
 
+RUN apt-get install -f
+
+# Opentestpoint-probe-example (my example probe)
 RUN mkdir opentestpoint-probe-example
 ADD opentestpoint-probe-example/ /opentestpoint-probe-example
 
@@ -81,9 +84,29 @@ RUN chmod 777 -R opentestpoint-probe-example && \
     make deb
 
 RUN cd opentestpoint-probe-example/.debbuild && \
-    dpkg-deb -xv *.deb /usr/lib/python3/dist-packages/otestpoint/
+    dpkg -i *.deb
 
 RUN apt-get install -f
+
+################################### 
+# checking for iproute difference # 
+###################################
+#RUN git clone https://github.com/adjacentlink/opentestpoint-probe-iproute.git
+
+#RUN chmod 777 -R opentestpoint-probe-iproute
+
+#RUN chmod -x opentestpoint/debian/*.install
+
+#RUN cd opentestpoint-probe-iproute && \
+#    ./autogen.sh && \
+#    ./configure && \
+#    make && \
+#    make deb
+
+#RUN cd opentestpoint-probe-iproute/.debbuild && \
+#    dpkg -i *.deb
+
+#RUN apt-get install -f
 
 RUN mkdir /emane-tutorial
 
