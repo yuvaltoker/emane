@@ -88,6 +88,8 @@ RUN cd opentestpoint-probe-example/.debbuild && \
 
 RUN apt-get install -f
 
+RUN cp /opentestpoint-probe-example/otestpoint/example/probe-example-probeexample.xsd /usr/lib/python3/dist-packages/otestpoint/example/probe-example-probeexample.xsd
+
 ################################### 
 # checking for iproute difference # 
 ###################################

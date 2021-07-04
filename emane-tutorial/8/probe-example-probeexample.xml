@@ -1,0 +1,5 @@
+<probe-example-ProbeExample address='localhost'>
+  <probes>
+    <Example.ProbeExample.Tables enable="yes"/>
+  </probes>
+</probe-example-ProbeExample>

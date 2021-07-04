@@ -1,5 +1,0 @@
-<probe-example address='localhost'>
-  <probes>
-    <otestpoint.example.probeexample enable="yes"/>
-  </probes>
-</probe-example>
